@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import CounterHooks from './CounterHooks'
+import TogglerHooks from './TogglerHooks'
+import SimpleFormHooks from './SimpleFormHooks'
+import SimpleFormInputHook from './SimpleFormInputHook'
+import Clicker from './Clicker'
+import SWMovies from './SWMovies'
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <CounterHooks />  
+      <TogglerHooks />
+      <SimpleFormHooks />
+      <SimpleFormInputHook />
+      <Clicker />
+      <SWMovies />
     </div>
   );
 }
 
 export default App;
+
+/**
+ * CounterHooks => basic hooks wiht useState
+ * TogglerHooks => to make your own hooks (created your own hooks in hooks folder: useToggle)
+ * SimpleFormHooks => basic form using hooks
+ * SimpleFormInputHook => to make your your own hooks for form (created your own hooks in hooks folder: useToseFormInputState)
+ * Clicker => basic useEffect
+ * SWMovies => useEffect calling api (with axios)
+ */
